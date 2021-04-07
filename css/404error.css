@@ -1,0 +1,80 @@
+:root {
+    --black-primary: #151515;
+    --white-menu: #f8f5f1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--black-primary);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.header__logo {
+    width: 160px;
+    height: 160px;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.error__container h1 {
+    color: var(--white-menu);
+    font-size: 15rem;
+    
+}
+
+.error__container p {
+    color: var(--white-menu);
+    font-size: 2rem;
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    font-size: 1.6rem;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: var(--white-menu);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animación pulse */
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+
+.error__container h1 {
+    animation-name: pulse;
+    animation-duration: 1s;
+}
